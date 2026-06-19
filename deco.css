@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.bg {
+    background-color: #f8f9fa;
+}
+
+/*---------- Navbar settings ----------*/
+nav.navbar {
+    background-color: #7d567a;
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+}
+
+nav.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav.navbar .navbar-header .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav.navbar .navbar-header .navbar-brand img.site-logo {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav.navbar .navbar-header .navbar-brand p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav.navbar .navbar-header .navbar-brand p:hover {
+    color: #ddd;
+}
+
+nav.navbar .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.navbar .nav.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav.navbar .nav.navbar-nav li {
+    margin: 0 15px;
+}
+
+nav.navbar .nav.navbar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav.navbar .nav.navbar-nav li a:hover {
+    color: #ddd;
+}
+
+/*--------------- home ----------------*/
+.home {
+    background-image: url('image/bg-web3.jpg'); /* Add your wallpaper image path here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.container-img {
+    margin : 0;
+    margin-bottom: 2rem;
+}
+.container-img img {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container-text {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+.container-text h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.container-text p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/*-------------- about me ----------------*/
+.about-me{
+    display: flex;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #d4e5f0;
+}
+.about-container{ /*กรอบข้อความ*/
+    text-align: left;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-left: 20px;
+    & h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    & p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/*-------------- education ----------------*/
+.education-me {
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #bfd3e0;
+    text-align: center;
+    & h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.education-container{  /*กรอบไอเทม*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+    row-gap: 3rem;
+}
+
+.education-box{  /*กล่อง*/
+    height: 420px;
+    max-width: 300px;
+    background-color: white;
+    backdrop-filter: blur(30px);
+    border: 2px solid black;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgb(170, 28, 139);
+    transition: 0.3s ease;
+}
+
+.education-box img{
+    max-width: 16vw;
+    object-fit: cover;
+}
+.education-box h1{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.education-box p{
+    font-size: 1rem;
+}
+
+/*---------------- skills -----------------*/
+.skills-me{
+    padding: 1rem 20%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #a7b6c0;
+    text-align: center;
+    & h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.skills-container{ /*กรอบไอเทม*/
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.skills-box {  /*กล่อง*/
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    padding: 2rem;
+    background-color: #444f56;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.skills-box h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+}
+.skills-item {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.skills-item  p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+/*----------------- contact ---------------*/
+.contact-me{
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #242224;
+    text-align: center;
+    & h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+    }
+}
+.contact-container{ /*กรอบข้อความ*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+.contact-box {
+    height: 100px;
+    max-width: 200px;
+    margin-top: 3rem;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgb(219, 219, 219);
+    transition: 0.3s ease;
+    & img {
+        width: 40%;
+        margin-right: 100px;
+    }
+}
+.contact-box h2 a {
+    margin-left: 50px;
+    color: #ffffff;
+}
+.contact-box h2 a:hover {
+    color: #ddd;
+}
+
+/*nav.navbar {
+    background-color: #d8c6c6;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav.navbar-nav {
+    display: flex;
+    list-style: none;
+    & li {
+        margin-right: 20px;
+        & a {
+            text-decoration: none;
+            color: #333;
+            &:hover {
+                color: #f1356d;
+            }
+        }
+    }
+} */
